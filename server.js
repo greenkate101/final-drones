@@ -3,6 +3,7 @@ var lowdb = require('lowdb');
 var fileAsync = require('lowdb/lib/file-async');
 var shortid = require('shortid');
 var bodyParser = require('body-parser');
+var path = require('path');
 
 var app = express();
 var port = parseInt(process.env.PORT) || 3000;
@@ -15,7 +16,7 @@ db.defaults({
 
 app.use(bodyParser());
 app.use(express.static(__dirname + '/public'))
-app.use(express.static('dist'))
+app.use(express.static(path.join(__dirname, 'dist'))
 app.use(express.static(__dirname + '/lib'))
 
 
