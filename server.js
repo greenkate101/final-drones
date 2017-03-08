@@ -16,7 +16,7 @@ db.defaults({
 
 app.use(bodyParser());
 app.use(express.static(__dirname + '/public'))
-app.use(express.static(path.join(__dirname, 'dist'))
+app.use(express.static(__dirname + '/dist'))
 app.use(express.static(__dirname + '/lib'))
 
 

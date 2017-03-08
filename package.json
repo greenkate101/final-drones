@@ -8,6 +8,7 @@
     "watch:js": "webpack --watch",
     "build:js": "webpack",
     "css": "node-sass src/scss/main.scss -o dist",
+    "build": "node-sass src/scss/main.scss -o dist && webpack",
     "watch:css": "node-sass src/scss/main.scss -wo dist",
     "dev": "npm run watch:js & npm run watch:css & npm run serve & npm start",
     "serve": "browser-sync start --proxy 'http://localhost:3000' --files 'dist/*.css, dist/*.js'",
