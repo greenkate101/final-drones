@@ -45,7 +45,6 @@ var Stats = React.createClass({
 
 	handleYearChange : function ( e ) {
 
-	  // this.setState({ year : val } );
 
 	  this.setState( { year : e.target.value } );
 	  
