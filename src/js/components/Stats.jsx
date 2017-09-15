@@ -50,7 +50,6 @@ var Stats = React.createClass({
 	  
 	  console.log(this.state.year);
 
-	  // console.log( "val", val );
 	},
 
 	render: function () {
