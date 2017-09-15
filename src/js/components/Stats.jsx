@@ -93,7 +93,6 @@ var Stats = React.createClass({
 						</select>
 					</div>
 
-					
 					<Casualties strike={this.state.strike} />
 					
 						
